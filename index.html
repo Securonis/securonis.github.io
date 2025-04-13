@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Securonis Linux</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Securonis Linux Logo">
+            <span class="logo-text">Securonis</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="https://sourceforge.net/p/securonis/wiki/Home/" target="_blank">Wiki</a></li>
+            <li><a href="https://github.com/Securonis" target="_blank">Github</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#developer">Developer</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-image">
+                <img src="assets/SecuronisLinux.png" alt="Securonis Linux System Preview">
+            </div>
+            <div class="hero-text">
+                <h1>Securonis Linux</h1>
+                <p>Securonis Linux is a Debian-based privacy-focused Linux distribution. It comes pre-loaded with various privacy and security tools and allows routing all internet traffic through the Tor network.</p>
+                <div class="hero-buttons">
+                    <a href="#download" class="cta-button">Download</a>
+                    <a href="#gallery" class="cta-button secondary">Gallery</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="about" class="about">
+        <h2>About Securonis</h2>
+        <div class="about-content">
+      
+          <!-- General Info -->
+          <div class="about-text">
+            <h3>Securonis GNU/Linux - Privacy-Focused Distro Based on Debian Trixie</h3>
+            <p>
+              Securonis GNU/Linux is a lightweight and high-performance operating system based on Debian, prioritizing privacy and security.
+            </p>
+            <p>
+              At its core lies a custom tool named <strong>Seconionis</strong>, which forces all incoming and outgoing traffic through the Tor network. This tool also modifies kernel and network configurations to minimize the risk of data leakage.
+            </p>
+            <p>
+              Securonis comes pre-installed with the <strong>I2P Router</strong>, a graphical user interface, and a preconfigured browser—making access to the I2P network seamless and user-friendly.
+            </p>
+            <p>
+              The system includes a wide range of encryption, security, and data wiping tools. DNS queries are encrypted via <strong>DNSCrypt-Proxy</strong>, ensuring secure DNS resolution.
+            </p>
+            <p>
+              With the <strong>System Hardening Script</strong>, kernel and network settings are fortified to protect against unauthorized access.
+            </p>
+            <p>
+              A powerful emergency feature called <strong>Panic Mode</strong> is also included:
+              <ul>
+                <li><strong>Physical Security Mode</strong> - defends against physical threats.</li>
+                <li><strong>Paranoia Mode</strong> - disconnects all communications and maximizes kernel security.</li>
+                <li><strong>Nuke the System</strong> - securely wipes the disk and irreversibly destroys all data.</li>
+              </ul>
+            </p>
+            <p>
+              Securonis uses the <strong>MATE desktop environment</strong> and the <strong>Calamares installer</strong> for easy setup.
+            </p>
+            <p>
+              Our mission is to deliver a secure, minimalistic, and privacy-respecting computing experience for everyday use.
+            </p>
+          </div>
+      
+          <!-- Privacy Features -->
+          <div class="about-text">
+            <h3>System-Wide Anonymity and Privacy Features</h3>
+            <p><strong>Seconionis</strong></p>
+            <ul>
+              <li>Routes all system traffic through the Tor network using a transparent proxy.</li>
+              <li>Written in Shell with a Python-based GUI.</li>
+              <li>Works as a systemd service for background operation.</li>
+              <li>Includes MAC address changer, Tor identity renewal, and trace cleaner.</li>
+            </ul>
+      
+            <p><strong>Anonymous Mode</strong></p>
+            <ul>
+              <li>Lightweight alternative to Seconionis, focused on trace cleaning.</li>
+              <li>Less powerful but simpler and faster to activate.</li>
+            </ul>
+      
+            <p><strong>I2P Router Menu</strong></p>
+            <ul>
+              <li>GUI tool for easy I2P setup on Linux.</li>
+              <li>Pre-configured Firefox for I2P browsing.</li>
+            </ul>
+      
+            <p><strong>DNSCrypt-Proxy</strong></p>
+            <ul>
+              <li>Encrypts DNS requests to prevent tracking.</li>
+              <li>Pre-configured and ready to use.</li>
+            </ul>
+      
+            <p><strong>Fingerprint Protection</strong></p>
+            <ul>
+              <li>System and browser tweaks to reduce fingerprinting and tracking.</li>
+            </ul>
+          </div>
+      
+          <!-- Security Mechanisms -->
+          <div class="about-text">
+            <h3>Security Mechanisms</h3>
+            <p><strong>Security Scan</strong></p>
+            <ul>
+              <li>Scan your system for vulnerabilities and misconfigurations.</li>
+            </ul>
+      
+            <p><strong>OpenMammoth – Securonis Edition</strong></p>
+            <ul>
+              <li>Customized network defense and simulation toolkit for Securonis.</li>
+              <li>Test and defend against network-based attacks effectively.</li>
+            </ul>
+      
+            <p><strong>System Hardening Script</strong></p>
+            <ul>
+              <li>Applies AppArmor, SELinux, and firewall configurations.</li>
+              <li>Uses custom kernel tweaks to improve system security and resilience.</li>
+            </ul>
+      
+            <p><strong>Panic Mode</strong></p>
+            <ul>
+              <li><strong>System Status Checks</strong>, <strong>Leak Tests</strong>, <strong>Trace Cleaner</strong></li>
+              <li><strong>Physical Security Mode</strong> – disables ports, blocks USB/Bluetooth, restricts permissions.</li>
+              <li><strong>Paranoia Mode</strong> – disconnects from networks, enables maximum kernel-level protection, isolates system.</li>
+              <li><strong>Nuke2System</strong> – securely overwrites disk, wipes RAM and metadata, irreversibly destroys data.</li>
+            </ul>
+            <p><strong>Warning:</strong> Use Nuke2System only in extreme situations. This action is irreversible.</p>
+          </div>
+      
+          <div class="about-text">
+            <h3>Special Tools for Securonis Linux</h3>
+            <p>Securonis Linux comes with dozens of custom-built applications, tools, scripts, and automations—all developed exclusively for the system. These tools are fully integrated and embedded into the OS.</p>
+            <p>You’ll find a wide range of features, including:</p>
+            <ul>
+              <li>Privacy Tools</li>
+              <li>Encryption Utilities</li>
+              <li>Security Applications</li>
+              <li>Trace-Cleaning Scripts</li>
+              <li>System Management Helpers</li>
+              <li>Usability Enhancements & Automation Scripts</li>
+            </ul>
+            <p>To learn more about each tool, visit the Tools section of the official website.</p>
+          </div>
+
+          <div class="about-text">
+            <h3>Why Securonis?</h3>
+            <p>My goal was simple: to create a minimal, fast, secure, and privacy-respecting Linux distribution.</p>
+            <p>In today’s world, it's hard to find a Linux distro that can be installed to a hard drive and is truly designed for daily use while also prioritizing privacy and security.</p>
+            <p>Securonis does exactly that. You won’t need to rely on virtual machines or flash drives anymore. No more messing around with complex Tor routing setups — everything is handled for you through tools developed specifically for Securonis.</p>
+            <p>It offers a safe and secure computing environment for everyday use. Whether it's a hardened browser experience, system protection, or trace removal — Securonis has you covered.</p>
+            <p>You can also run it in Live Mode, meaning you don’t need to install it right away. You can try it out or use it portably — the choice is yours.</p>
+            <p>Designing Securonis was a fun journey, though not always easy. I truly hope you enjoy using it as much as I enjoyed building it!</p>
+          </div>
+      
+      
+        </div>
+      </section>
+      
+
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <h3>Privacy</h3>
+                <p>Comes preloaded with various privacy tools. System-wide privacy is ensured using a Tor transparent proxy.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Security</h3>
+                <p>Includes various security tools. System security can be enhanced with custom-built scripts.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Cryptography</h3>
+                <p>Includes encryption tools specifically designed for Securonis.</p>
+            </div>
+            <div class="feature-item">
+                <h3>I2P Router</h3>
+                <p>Securonis Linux comes with I2P pre-installed and fully configured out of the box.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Mate Desktop Environment</h3>
+                <p>Uses the MATE desktop, known for its lightweight performance and clean interface.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Calamares Installer</h3>
+                <p>Enables easy disk installation using the Calamares installer.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Easy to Use</h3>
+                <p>Very user-friendly and does not require advanced technical knowledge.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Rolling Release</h3>
+                <p>Updates are pulled from Debian Testing repositories, keeping the system constantly up to date.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Browser Security</h3>
+                <p>Firefox is pre-configured. Tor and I2P are easily accessible and ready to use.</p>
+            </div>
+            <div class="feature-item">
+                <h3>VPN</h3>
+                <p>Comes with ProtonVPN pre-installed.</p>
+            </div>
+            <div class="feature-item">
+                <h3>DNSCrypt</h3>
+                <p>DNSCrypt-Proxy can be used easily with a simple script provided.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Anti-Forensic Features</h3>
+                <p>System and browser are designed to make digital fingerprinting more difficult.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Ready to Use</h3>
+                <p>Drivers and essential packages are pre-installed. Everything is ready out of the box.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Fast</h3>
+                <p>Optimized system delivers high performance even on older hardware.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Minimal</h3>
+                <p>Clean and stripped-down system that avoids unnecessary bloat and complexity.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Long-Term Support</h3>
+                <p>Updates are pulled from Debian Trixie repositories. Built-in tools ensure stability. Upgrading to a new ISO is optional.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Customizable System</h3>
+                <p>Security professionals can add repositories and perform penetration testing as needed.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Live System</h3>
+                <p>Runs in live mode. Can be used as a portable system without installation.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Free</h3>
+                <p>Securonis Linux is completely free. Donations are welcome but optional.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Open Source</h3>
+                <p>The entire system, including tools and customizations, is fully open-source.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="tools" class="tools">
+        <h2>Securonis Tools</h2>
+        <div class="tools-grid">
+            <div class="tool-card">
+                <h3>Seconionis</h3>
+                <p>Tor Traffic Router (Transparent Proxy / Torify)</p>
+            </div>
+            <div class="tool-card">
+                <h3>Anonymous Mode</h3>
+                <p>Alternative Tor Traffic Router (Transparent Proxy / Torify)</p>
+            </div>
+            <div class="tool-card">
+                <h3>Panic Mode</h3>
+                <p>Emergency security mode. Includes Paranoia Mode, Physical Security Mode, Privacy Checker, and System Wipe Mode.</p>
+            </div>
+            <div class="tool-card">
+                <h3>PxrtalCrypt</h3>
+                <p>An advanced file encryption application.</p>
+            </div>
+            <div class="tool-card">
+                <h3>Securonis Notes</h3>
+                <p>An encrypted note-taking application.</p>
+            </div>
+            <div class="tool-card">
+                <h3>Securonis Password Manager</h3>
+                <p>Securely stores your passwords.</p>
+            </div>
+            <div class="tool-card">
+                <h3>Quick-USBKit</h3>
+                <p>A USB toolkit for configuring and checking the health of your USB drives.</p>
+            </div>
+            <div class="tool-card">
+                <h3>Open Mammoth S.E.</h3>
+                <p>A powerful network defense toolkit.</p>
+            </div>
+            <div class="tool-card">
+                <h3>Escape Wizard</h3>
+                <p>A simple trace cleaning tool.</p>
+            </div>
+            <div class="tool-card">
+                <h3>Netxtrack</h3>
+                <p>Network traffic monitoring and packet analysis tool.</p>
+            </div>
+            <div class="tool-card">
+                <h3>Securonis DNSCrypt</h3>
+                <p>A script that simplifies the use of DNSCrypt-Proxy.</p>
+            </div>
+            <div class="tool-card">
+                <h3>VesperaCrypt</h3>
+                <p>A simple and user-friendly file encryption tool.</p>
+            </div>
+            <div class="tool-card">
+                <h3>System Manager</h3>
+                <p>Provides various features for system management.</p>
+            </div>
+            <div class="tool-card">
+                <h3>I2P Router Menu</h3>
+                <p>A GUI menu for I2P Router management.</p>
+            </div>
+            <div class="tool-card">
+                <h3>Metadata Cleaner</h3>
+                <p>A tool for removing metadata from files.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="assets/SecuronisLinux.png" alt="Securonis Linux">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/ss1.png" alt="Securonis Linux">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/ss2.png" alt="Securonis Linux">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/ss3.png" alt="Securonis Linux">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/ss4.png" alt="Securonis Linux">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/ss5.png" alt="Securonis Linux">
+            </div>
+            <div class="gallery-item">
+                <img src="/assets/ss6.png" alt="Securonis Linux">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/ss7.png" alt="Securonis Linux">
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <h2>Download Securonis</h2>
+        <div class="download-links">
+            <a href="https://sourceforge.net/projects/securonis/" class="cta-button">
+                <img src="assets/source.png" alt="SourceForge" class="download-icon">
+                Download from Sourceforge
+            </a>
+            <a href="https://drive.google.com/your-drive-link" class="cta-button">
+                <img src="assets/drive.png" alt="Google Drive" class="download-icon">
+                Download from Google Drive
+            </a>
+        </div>
+    </section>
+
+    <section id="donate" class="donate">
+        <h2>Donate </h2>
+        <div class="donate-content">
+            <p>Make a donation to contribute to the development of Securonis Linux.</p>
+            
+            <div class="donate-options">
+                <div class="donate-option">
+                    <i class="fab fa-bitcoin"></i>
+                    <h3>Bitcoin</h3>
+                    <p>BTC Address:</p>
+                    <code class="copyable">???</code>
+                </div>
+                
+                <div class="donate-option">
+                    <i class="fab fa-ethereum"></i>
+                    <h3>Ethereum</h3>
+                    <p>ETH Address:</p>
+                    <code class="copyable">???</code>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="developer" class="developer">
+        <h2>Developer</h2>
+        <div class="developer-section">
+            <div class="developer-image">
+                <img src="assets/developer.png" alt="root0emir">
+            </div>
+            <div class="developer-info">
+                <h3>root0emir</h3>
+                <p>I'm a System and Network Specialist with a strong focus on Linux-based infrastructures, automation, and security.
+                     My expertise lies in system administration, network security, and Linux distribution development, where I continuously refine my skills and explore new technologies.</p>
+                <div class="social-links">
+                    <a href="mailto:root0emir@protonmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/root0emir" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/emir-k-5a81a9308/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://medium.com/" target="_blank"><i class="fab fa-medium"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Securonis Linux</h3>
+                <p>//Simple,Fast.Minimal,Secure.</p>
+                <br>
+                <p>~The brightest ideas come from minds in the shadows.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Securonis</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Securonis Linux. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -14,9 +14,6 @@
             <img src="assets/logo.png" alt="Securonis Linux Logo">
             <span class="logo-text">Securonis</span>
         </div>
-        <button class="mobile-menu-btn">
-            <i class="fas fa-bars"></i>
-        </button>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -467,22 +464,6 @@ Securonis Linux is the result of that journey — a project built with dedicatio
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Mobil menü
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
-
-        mobileMenuBtn.addEventListener('click', function() {
-            navLinks.classList.toggle('active');
-        });
-
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-
-
         const modal = document.getElementById('imageModal');
         const modalImg = document.getElementById('modalImage');
         const closeBtn = document.querySelector('.close-modal');

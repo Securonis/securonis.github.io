@@ -14,6 +14,9 @@
             <img src="assets/logo.png" alt="Securonis Linux Logo">
             <span class="logo-text">Securonis</span>
         </div>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -98,7 +101,7 @@
       
             <p><strong>I2P Router Menu</strong></p>
             <ul>
-              <li>GUI tool for easy I2P routing on Linux.</li>
+              <li>GUI tool for easy I2P setup on Linux.</li>
               <li>Pre-configured Firefox for I2P browsing.</li>
             </ul>
       
@@ -120,7 +123,7 @@
 
             <p><strong>OpenMammoth</strong></p>
             <ul>
-              <li>Customized network defense toolkit for Securonis.</li>
+              <li>Customized network defense and simulation toolkit for Securonis.</li>
             </ul>
       
             <p><strong>System Hardening Script</strong></p>
@@ -355,6 +358,16 @@ This feature is intended solely as a security measure to protect your personal d
             </div>
             <div class="gallery-item">
                 <img src="assets/SecuronisLinux2.png" alt="Securonis Linux Screenshot 9">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/ss9.png" alt="Securonis Linux Screenshot 10">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/ss10.png" alt="Securonis Linux Screenshot 11">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/ss11.png" alt="Securonis Linux Screenshot 12">
+            </div>
         </div>
     </section>
 
@@ -432,10 +445,10 @@ Securonis Linux is the result of that journey — a project built with dedicatio
                 <h3>Securonis Socials</h3>
                 <ul>
                     <li><a href="https://github.com/Securonis" target="_blank"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/company/securonis-linux" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/securonis" target="_blank"><i class="fab fa-linkedin"></i></a></li>
                     <li><a href="https://twitter.com/securonis" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="https://www.youtube.com/@scrpsec" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                    <li><a href="https://medium.com/" target="_blank"><i class="fab fa-medium"></i></a></li>
+                    <li><a href="https://www.youtube.com/@securonis" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://medium.com/@securonis" target="_blank"><i class="fab fa-medium"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -454,6 +467,22 @@ Securonis Linux is the result of that journey — a project built with dedicatio
 
     <script>
     document.addEventListener('DOMContentLoaded', function() {
+        // Mobil menü
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenuBtn.addEventListener('click', function() {
+            navLinks.classList.toggle('active');
+        });
+
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+
         const modal = document.getElementById('imageModal');
         const modalImg = document.getElementById('modalImage');
         const closeBtn = document.querySelector('.close-modal');
